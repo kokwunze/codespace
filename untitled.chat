@@ -2,34 +2,27 @@
   "messages": [
     {
       "type": "msg",
+      "sender": "86529f5f7f6f4c388bbe42422c8c7fab",
+      "raw_time": false,
+      "body": "Hi can you read my opencode-demo notebook? ",
+      "id": "0699866f-94b3-45ca-90fa-df34158720bb",
       "metadata": {
+        "settings": {},
         "model": {
           "id": null,
           "settings": {}
         },
-        "settings": {},
         "to_persona": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona"
       },
-      "body": "Hi can you read my opencode-demo notebook? ",
-      "raw_time": false,
-      "id": "0699866f-94b3-45ca-90fa-df34158720bb",
-      "time": 1792417571.456807,
-      "sender": "86529f5f7f6f4c388bbe42422c8c7fab"
+      "time": 1792417571.456807
     },
     {
-      "time": 1792417575.057849,
       "raw_time": false,
-      "type": "msg",
-      "id": "1ddf7e9f-707f-43b9-a574-2600a4d7fa27",
-      "mentions": [],
-      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
-      "body": "",
       "metadata": {
         "tool_calls": [
           {
-            "status": "completed",
             "tool_call_id": "call_a5c5cafb25e94a079e0c8fa7",
-            "kind": "search",
+            "status": "completed",
             "raw_input": {
               "pattern": "**/opencode-demo*.ipynb"
             },
@@ -40,9 +33,12 @@
                 "count": 1.0,
                 "truncated": false
               }
-            }
+            },
+            "kind": "search"
           },
           {
+            "tool_call_id": "call_01cd87570bf84da6b359bb9f",
+            "title": "Jupyter_MCP_Server_read_notebook",
             "raw_output": {
               "output": "```yaml\nkernelspec:\n  display_name: R 4.5.3 (xr)\n  language: R\n  name: xr\nlanguage_info:\n  codemirror_mode: ''\n  file_extension: .R\n  mimetype: text/x-R\n  name: R\n  nbconvert_exporter: ''\n  pygments_lexer: r\n  version: 4.5.3\n```\n\n### Cell 0\n\n#### Metadata\n\n```yaml\nid: ab8760c8-cd9e-4434-ab37-33c3788208b1\ntype: code\n```\n\n#### Source\n\n```python\n```\n\n### Cell 1\n\n#### Metadata\n\n```yaml\nexecution:\n  iopub.execute_input: '2026-10-19T13:42:07.716628Z'\n  iopub.status.busy: '2026-10-19T13:42:07.716559Z'\n  iopub.status.idle: '2026-10-19T13:42:08.273704Z'\n  shell.execute_reply: '2026-10-19T13:42:08.273618Z'\nexecution_count: 1\nid: 31b905c7-d256-4831-8d88-4c056de85014\ntype: code\n```\n\n#### Source\n\n```python\nlibrary(ggplot2)```\n\n### Cell 2\n\n#### Metadata\n\n```yaml\nexecution:\n  iopub.execute_input: '2026-10-19T13:42:08.275250Z'\n  iopub.status.busy: '2026-10-19T13:42:08.275091Z'\n  iopub.status.idle: '2026-10-19T13:42:09.619998Z'\n  shell.execute_reply: '2026-10-19T13:42:09.619938Z'\nexecution_count: 2\nid: 013759cb-4b85-4a70-a2a8-ea57a8e84c8c\ntype: code\n```\n\n#### Source\n\n```python\nggplot(mpg, aes(x = cty, y = hwy)) +\n  geom_point()```",
               "metadata": {
@@ -50,95 +46,99 @@
               }
             },
             "status": "completed",
-            "title": "Jupyter_MCP_Server_read_notebook",
             "raw_input": {
               "file_path": "notebooks/opencode-demo.ipynb"
             },
-            "kind": "other",
-            "tool_call_id": "call_01cd87570bf84da6b359bb9f"
+            "kind": "other"
           }
         ]
-      }
-    },
-    {
-      "body": "Your `notebooks/opencode-demo.ipynb` is an R notebook (kernel: R 4.5.3) with 3 cells:\n\n- **Cell 0** \u2014 empty code cell\n- **Cell 1** \u2014 `library(ggplot2)` (executed)\n- **Cell 2** \u2014 a ggplot scatter plot of `cty` vs `hwy` from the `mpg` dataset (executed)",
-      "id": "0d81415e-204e-40f3-92e6-4a68e29ff05b",
-      "time": 1792417577.8197174,
+      },
+      "type": "msg",
       "mentions": [],
-      "type": "msg",
-      "raw_time": false,
-      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona"
+      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
+      "body": "",
+      "id": "1ddf7e9f-707f-43b9-a574-2600a4d7fa27",
+      "time": 1792417575.057849
     },
     {
-      "type": "msg",
-      "sender": "86529f5f7f6f4c388bbe42422c8c7fab",
-      "body": "nice",
+      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
+      "body": "Your `notebooks/opencode-demo.ipynb` is an R notebook (kernel: R 4.5.3) with 3 cells:\n\n- **Cell 0** \u2014 empty code cell\n- **Cell 1** \u2014 `library(ggplot2)` (executed)\n- **Cell 2** \u2014 a ggplot scatter plot of `cty` vs `hwy` from the `mpg` dataset (executed)",
+      "time": 1792417577.8197174,
+      "id": "0d81415e-204e-40f3-92e6-4a68e29ff05b",
+      "raw_time": false,
+      "mentions": [],
+      "type": "msg"
+    },
+    {
       "metadata": {
+        "to_persona": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
         "model": {
           "id": null,
           "settings": {}
         },
-        "to_persona": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
         "settings": {}
       },
+      "body": "nice",
       "id": "16144448-84cb-4d8f-ab26-0d2c389c2af9",
+      "raw_time": false,
       "time": 1792417583.1341922,
-      "raw_time": false
+      "type": "msg",
+      "sender": "86529f5f7f6f4c388bbe42422c8c7fab"
     },
     {
-      "raw_time": false,
-      "type": "msg",
-      "time": 1792417583.9699485,
-      "id": "ee27138a-0590-4a62-9608-6cc15670befb",
       "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
-      "body": "Need anything else with the notebook?",
-      "mentions": []
-    },
-    {
-      "raw_time": false,
-      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
-      "type": "msg",
       "mentions": [],
-      "time": 1792419683.266336,
+      "time": 1792417583.9699485,
       "body": "Need anything else with the notebook?",
+      "raw_time": false,
+      "type": "msg",
+      "id": "ee27138a-0590-4a62-9608-6cc15670befb"
+    },
+    {
+      "time": 1792419683.266336,
+      "mentions": [],
+      "type": "msg",
+      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
+      "body": "Need anything else with the notebook?",
+      "raw_time": false,
       "id": "cc0e885f-cd1b-4da1-8eb3-0519468a8531"
     }
   ],
   "users": {
-    "86529f5f7f6f4c388bbe42422c8c7fab": {
-      "username": "86529f5f7f6f4c388bbe42422c8c7fab",
-      "initials": "AG",
-      "color": "var(--jp-collaborator-color3)",
-      "bot": false,
-      "avatar_url": null,
-      "mention_name": "Anonymous-Ganymede",
-      "display_name": "Anonymous Ganymede",
-      "name": "Anonymous Ganymede"
-    },
     "hidden::jupyter_ai_system": {
-      "color": null,
       "initials": null,
-      "username": "hidden::jupyter_ai_system",
-      "name": "System",
-      "bot": true,
       "avatar_url": null,
+      "bot": true,
+      "username": "hidden::jupyter_ai_system",
+      "color": null,
+      "name": "System",
       "display_name": "System"
     },
+    "86529f5f7f6f4c388bbe42422c8c7fab": {
+      "bot": false,
+      "username": "86529f5f7f6f4c388bbe42422c8c7fab",
+      "name": "Anonymous Ganymede",
+      "mention_name": "Anonymous-Ganymede",
+      "initials": "AG",
+      "avatar_url": null,
+      "display_name": "Anonymous Ganymede",
+      "color": "var(--jp-collaborator-color3)"
+    },
     "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona": {
-      "initials": null,
-      "avatar_url": "/api/ai/avatars/jupyter-ai-personas%3A%3Ajupyter_ai_acp_client%3A%3AOpenCodeAcpPersona",
       "display_name": "OpenCode",
+      "name": "OpenCode",
       "color": null,
-      "bot": true,
       "username": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
-      "name": "OpenCode"
+      "initials": null,
+      "bot": true,
+      "avatar_url": "/api/ai/avatars/jupyter-ai-personas%3A%3Ajupyter_ai_acp_client%3A%3AOpenCodeAcpPersona"
     }
   },
   "attachments": {},
   "metadata": {
+    "id": "2267fa74-76dc-4865-b49a-c434d75adbb6",
     "acp_session_ids": {
       "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona": "ses_eab968156ffeqOLY1aKY7vC4BZ"
-    },
-    "id": "2267fa74-76dc-4865-b49a-c434d75adbb6"
+    }
   }
 }

@@ -1,48 +1,47 @@
 {
   "messages": [
     {
+      "raw_time": false,
+      "body": "Hi can you read my opencode-demo notebook? ",
+      "id": "0699866f-94b3-45ca-90fa-df34158720bb",
+      "type": "msg",
+      "sender": "86529f5f7f6f4c388bbe42422c8c7fab",
+      "time": 1792417571.456807,
       "metadata": {
+        "settings": {},
         "to_persona": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
         "model": {
           "settings": {},
           "id": null
-        },
-        "settings": {}
-      },
-      "body": "Hi can you read my opencode-demo notebook? ",
-      "type": "msg",
-      "id": "0699866f-94b3-45ca-90fa-df34158720bb",
-      "raw_time": false,
-      "time": 1792417571.456807,
-      "sender": "86529f5f7f6f4c388bbe42422c8c7fab"
+        }
+      }
     },
     {
       "time": 1792417575.057849,
-      "mentions": [],
-      "type": "msg",
-      "body": "",
-      "id": "1ddf7e9f-707f-43b9-a574-2600a4d7fa27",
       "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
-      "raw_time": false,
+      "id": "1ddf7e9f-707f-43b9-a574-2600a4d7fa27",
+      "body": "",
       "metadata": {
         "tool_calls": [
           {
+            "status": "completed",
             "raw_input": {
               "pattern": "**/opencode-demo*.ipynb"
             },
             "title": "glob",
             "kind": "search",
-            "status": "completed",
             "tool_call_id": "call_a5c5cafb25e94a079e0c8fa7",
             "raw_output": {
+              "output": "/workspaces/codespace/notebooks/opencode-demo.ipynb",
               "metadata": {
-                "truncated": false,
-                "count": 1.0
-              },
-              "output": "/workspaces/codespace/notebooks/opencode-demo.ipynb"
+                "count": 1.0,
+                "truncated": false
+              }
             }
           },
           {
+            "tool_call_id": "call_01cd87570bf84da6b359bb9f",
+            "title": "Jupyter_MCP_Server_read_notebook",
             "raw_output": {
               "metadata": {
                 "truncated": false
@@ -52,28 +51,31 @@
             "raw_input": {
               "file_path": "notebooks/opencode-demo.ipynb"
             },
-            "tool_call_id": "call_01cd87570bf84da6b359bb9f",
             "status": "completed",
-            "kind": "other",
-            "title": "Jupyter_MCP_Server_read_notebook"
+            "kind": "other"
           }
         ]
-      }
-    },
-    {
-      "mentions": [],
-      "body": "Your `notebooks/opencode-demo.ipynb` is an R notebook (kernel: R 4.5.3) with 3 cells:\n\n- **Cell 0** \u2014 empty code cell\n- **Cell 1** \u2014 `library(ggplot2)` (executed)\n- **Cell 2** \u2014 a ggplot scatter plot of `cty` vs `hwy` from the `mpg` dataset (executed)",
+      },
       "raw_time": false,
-      "id": "0d81415e-204e-40f3-92e6-4a68e29ff05b",
-      "time": 1792417577.8197174,
       "type": "msg",
-      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona"
+      "mentions": []
     },
     {
-      "sender": "86529f5f7f6f4c388bbe42422c8c7fab",
       "raw_time": false,
+      "mentions": [],
+      "time": 1792417577.8197174,
+      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
+      "type": "msg",
+      "body": "Your `notebooks/opencode-demo.ipynb` is an R notebook (kernel: R 4.5.3) with 3 cells:\n\n- **Cell 0** \u2014 empty code cell\n- **Cell 1** \u2014 `library(ggplot2)` (executed)\n- **Cell 2** \u2014 a ggplot scatter plot of `cty` vs `hwy` from the `mpg` dataset (executed)",
+      "id": "0d81415e-204e-40f3-92e6-4a68e29ff05b"
+    },
+    {
+      "raw_time": false,
+      "sender": "86529f5f7f6f4c388bbe42422c8c7fab",
       "time": 1792417583.1341922,
       "body": "nice",
+      "id": "16144448-84cb-4d8f-ab26-0d2c389c2af9",
+      "type": "msg",
       "metadata": {
         "model": {
           "settings": {},
@@ -81,57 +83,55 @@
         },
         "to_persona": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
         "settings": {}
-      },
-      "id": "16144448-84cb-4d8f-ab26-0d2c389c2af9",
+      }
+    },
+    {
+      "body": "Need anything else with the notebook?",
+      "mentions": [],
+      "raw_time": false,
+      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
+      "id": "ee27138a-0590-4a62-9608-6cc15670befb",
+      "time": 1792417583.9699485,
       "type": "msg"
     },
     {
-      "type": "msg",
-      "raw_time": false,
-      "time": 1792417583.9699485,
-      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
-      "mentions": [],
-      "body": "Need anything else with the notebook?",
-      "id": "ee27138a-0590-4a62-9608-6cc15670befb"
-    },
-    {
-      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
-      "mentions": [],
-      "type": "msg",
-      "raw_time": false,
+      "id": "cc0e885f-cd1b-4da1-8eb3-0519468a8531",
       "time": 1792419683.266336,
-      "body": "Need anything else with the notebook?",
-      "id": "cc0e885f-cd1b-4da1-8eb3-0519468a8531"
+      "type": "msg",
+      "mentions": [],
+      "sender": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
+      "raw_time": false,
+      "body": "Need anything else with the notebook?"
     }
   ],
   "users": {
-    "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona": {
-      "color": null,
-      "avatar_url": "/api/ai/avatars/jupyter-ai-personas%3A%3Ajupyter_ai_acp_client%3A%3AOpenCodeAcpPersona",
-      "bot": true,
-      "display_name": "OpenCode",
-      "initials": null,
-      "name": "OpenCode",
-      "username": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona"
+    "86529f5f7f6f4c388bbe42422c8c7fab": {
+      "mention_name": "Anonymous-Ganymede",
+      "bot": false,
+      "avatar_url": null,
+      "initials": "AG",
+      "name": "Anonymous Ganymede",
+      "username": "86529f5f7f6f4c388bbe42422c8c7fab",
+      "display_name": "Anonymous Ganymede",
+      "color": "var(--jp-collaborator-color3)"
     },
     "hidden::jupyter_ai_system": {
       "initials": null,
+      "avatar_url": null,
+      "display_name": "System",
       "color": null,
       "bot": true,
       "username": "hidden::jupyter_ai_system",
-      "display_name": "System",
-      "avatar_url": null,
       "name": "System"
     },
-    "86529f5f7f6f4c388bbe42422c8c7fab": {
-      "mention_name": "Anonymous-Ganymede",
-      "username": "86529f5f7f6f4c388bbe42422c8c7fab",
-      "display_name": "Anonymous Ganymede",
-      "bot": false,
-      "color": "var(--jp-collaborator-color3)",
-      "initials": "AG",
-      "name": "Anonymous Ganymede",
-      "avatar_url": null
+    "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona": {
+      "display_name": "OpenCode",
+      "username": "jupyter-ai-personas::jupyter_ai_acp_client::OpenCodeAcpPersona",
+      "initials": null,
+      "color": null,
+      "name": "OpenCode",
+      "avatar_url": "/api/ai/avatars/jupyter-ai-personas%3A%3Ajupyter_ai_acp_client%3A%3AOpenCodeAcpPersona",
+      "bot": true
     }
   },
   "attachments": {},
